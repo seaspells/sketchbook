@@ -6,12 +6,14 @@ padding: 0px;
 
 html {
     overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
     font-size: 16px;
 }
 
 body {
     overflow: auto;
+    overflow-x: hidden;
     height: 100%;
 }
 
@@ -146,11 +148,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  
-    html, body {
-      overflow-x: hidden;
-    }
-    
+
     .header {
         width: 100%;
     }
@@ -163,4 +161,12 @@ body {
     #wrapper, .column-left, .column-center, .column-right {
       width: 100%;
     }
+}
+
+@media only screen and (min-width 768px) and (max-width: 1366px) {
+    
+    .column-left, .column-center, .column-right {
+        width: auto;
+    }
+    
 }
