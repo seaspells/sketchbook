@@ -85,10 +85,9 @@ body {
 #wrapper {
     width: 100%;
     position: relative;
-    margin: 0 auto;
-    padding-left: 11%;
-    padding-right: 11%;
-    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 3px;
