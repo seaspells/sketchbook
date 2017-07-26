@@ -96,7 +96,6 @@ body {
     background-color: hsla(190, 100%, 87%, 1);
     top: 2em;
     margin: 10px 10px;
-    box-sizing: border-box;
 }
 
 .column-center {
@@ -107,7 +106,6 @@ body {
     background-color: hsla(190, 100%, 87%, 1); 
     top: 2em;
     margin: 10px 10px;
-    box-sizing: border-box;
 
 }
 
@@ -119,7 +117,6 @@ body {
     background-color: hsla(190, 100%, 87%, 1);
     top: 2em;
     margin: 10px 10px;
-    box-sizing: border-box;
 }
 
 #wrapper p {
@@ -163,10 +160,23 @@ body {
     }
 }
 
-@media only screen and (min-width 768px) and (max-width: 1366px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    
+    #wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
     
     .column-left, .column-center, .column-right {
-        width: auto;
+      display: inline-block;
+      width: 30vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .column-left, .column-center {
+      margin-right: 5px; 
     }
     
 }
